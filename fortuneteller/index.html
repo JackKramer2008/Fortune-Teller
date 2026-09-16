@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-   
+
 
     <title>Fortune Teller</title>
 
@@ -16,12 +16,38 @@
     <h1>
       Fortune Teller
     </h1>
-    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html" method = "get">
       <label for="namefield">Name:</label>
       <input type="text" id="namefield" name="name" placeholder="your name" required>
       <br>
+      <label for="favc">Aura Color:</label>
+      <input type="color" id="favc" name="colors">
+      <br>
+      <label for="em">EMAIL:</label>
+      <input type="email" id="em" name="@gmail.com" placeholder="enter email">
+      <br>
+      <label for="pw">PASSWORD:</label>
+      <input type="password" id="pw" name="***" placeholder="enter password">
+      <br>
       <label for="questionfield">Question:</label>
       <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+      <p>How attractive are you (Rated 1-10 with 10 being most attractive)</p>
+        <select name="hotness">
+        <option value="Perfect">10</option>
+        <option value="Incredible">9</option>
+        <option value="Great">8</option>
+        <option value="Good">7</option>
+        <option value="Okay">6</option>
+        <option value="Average">5</option>
+        <option value="Subfive">4</option>
+        <option value="Ugly">3</option>
+        <option value="Very ugly">2</option>
+        <option value="Inhuman">1</option>
+        </select>
+      <br>
+        <p>Any other comments?</p>
+        <textarea name="write" rows="8" cols="90"></textarea>
       <br>
       <input type="submit">
     </form>
